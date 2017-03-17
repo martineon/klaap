@@ -8,9 +8,9 @@ class LandingPage extends Component {
       <div className="container-fullpage">
 
         <div className="input-container">
-          <form mathod="post" action="/api/users">
-            <input type="text" placeholder="NAME"/>
-            <input type="text" placeholder="EMAIL"/>
+          <form method="post" action="/api/users">
+            <input type="text" name="email" placeholder="EMAIL"/>
+            <input type="text" name="name" placeholder="NAME"/>
             <button type="submit">Submit</button>
           </form>
         </div>
