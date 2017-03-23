@@ -2,34 +2,92 @@
   padding: 0;
   margin: 0;
 }
+.logo-landing{
+  width: 50vw;
+}
 .container-fullpage{
   color: white;
   font-family: 'Quicksand', sans-serif;
   width: 100vw;
-  min-height: 100vh;
-  background-color: #141C33;
-
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .input-container form{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 25vw
+  height: 20vw;
+}
+.text-form-landing{
+  font-weight: 300;
+}
+.input-box{
+  width: 50vw;
+  display: flex;
+  justify-content: space-around;
 }
 .input-container input, button{
   border-radius: 50px;
-  border: 1px solid rgba(86, 214, 126, 1);
-  height: 40px;
-  /*width: 20vw;*/
-  background-color: rgba(86, 214, 126, 0.45);
-  color: rgba(86, 214, 126, 1);
+  /*border: 2px solid rgba(86, 214, 126, 1);*/
+  height: 50px;
+  /*background-color: rgba(86, 214, 126, 0.45);
+  color: rgba(86, 214, 126, 1);*/
   font-size: 20px;
+  font-weight: 300;
   padding: 0 10px 0 10px;
   font-family: "QuickSand", sans-serif;
   text-align: center;
+  outline: none;
+  transition: background-color 0.5s;
+}
+.email-input{
+  background-color: rgba(235, 90, 92, 0.60);
+  border: 2px solid rgba(235, 90, 92, 1);
+  color: rgba(235, 90, 92, 1);
+}
+.email-input:focus{
+background-color: rgba(235, 90, 92, 0.30);
+}
+.email-input::placeholder{
+  color: rgba(235, 90, 92, 1);
+}
+.name-input{
+  background-color: rgba(235, 90, 92, 0.60);
+  border: 2px solid rgba(235, 90, 92, 1);
+  color: rgba(235, 90, 92, 1);
+}
+.name-input::placeholder{
+  color: rgba(235, 90, 92, 1);
+}
+.name-input:focus{
+  background-color: rgba(235, 90, 92, 0.30);
+}
+.button-submit-landing{
+  background-color: rgba(235, 90, 92, 0.60);
+  border: 2px solid rgba(235, 90, 92, 1);
+  color: rgba(235, 90, 92, 1);
+}
+.button-submit-landing:active{
+  background-color: rgba(235, 90, 92, 0.30);
+}
+.input-container input{
+  width: 100px;
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
+
+.input-container input:focus{
+  width: 300px;
 }
 .input-container input::placeholder{
-  color: rgba(86, 214, 126, 1);
   text-align: center;
+}
+.input-container button{
+  width: 100px;
+  text-align: center;
+}
+.input-container button:active{
+  transition: background-color 0.5s;
 }
