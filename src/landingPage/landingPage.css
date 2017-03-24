@@ -2,60 +2,174 @@
   padding: 0;
   margin: 0;
 }
+.logo-landing-box{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
 .logo-landing{
   width: 50vw;
+  opacity: 1;
+  /*animation-name: animLogo;
+  animation-duration: 2s*/
 }
 .container-fullpage{
   color: white;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Quicksand' ,sans-serif;
   width: 100vw;
-  height: 100vh;
+  /*height: 100vh;*/
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
+}
+.content-box{
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.text-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vw 0;
+}
+.text-description{
+  font-weight: 300;
+  text-align: center;
+  width: 72vw;
+  padding: 4vw 4vw;
+  margin: 5vw 0;
+  text-align: justify;
+  font-size: 2vw
+}
+.red{
+  border: 1px solid #eb5a5c;
+  color: #eb5a5c;
+}
+.white{
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+.yellow{
+  border: 1px solid #fcea0d;
+  color: #fcea0d;
+}
+.green{
+  border: 1px solid #14f453;
+  color: #14f453;
+}
+.blue{
+  border: 1px solid #10eef9;
+  color: #10eef9;
+}
+.commencement::before{
+  content: 'klaap de commencement';
+  position: absolute;
+  margin-top: -7vw;
+  font-size: 4vw;
+  background-color: #141C33;
+  padding: 0 1vw;
+}
+.kesako::before{
+  content: 'kesako?';
+  position: absolute;
+  margin-top: -7vw;
+  margin-left: 40vw;
+  font-size: 4vw;
+  background-color: #141C33;
+  padding: 0 1vw;
+}
+.klaap-action::before{
+  content: 'klaap & action !';
+  position: absolute;
+  margin-top: -7vw;
+  margin-left: 15vw;
+  font-size: 4vw;
+  background-color: #141C33;
+  padding: 0 1vw;
+}
+.klaap-innover::before{
+  content: 'klaap klaap klaap pour innover';
+  position: absolute;
+  margin-top: -7vw;
+  margin-left: 0vw;
+  font-size: 4vw;
+  background-color: #141C33;
+  padding: 0 1vw;
+}
+.input-container{
+  /*height: 20vw;*/
+  margin: 5vw 0;
+  padding: 4vw 4vw;
+  border: 1px solid rgba(235, 90, 92, 1);
+  width: 72vw;
+}
+.follow::before{
+  content:'Pour nous suivre';
+  color: #eb5a5c;
+  font-weight: 300;
+  font-size: 4vw;
+  position: absolute;
+  background-color: #141C33;
+  margin-top: -7vw;
+  padding: 0 1vw;
+}
+.klaap-fin::before{
+  content:'klaap de fin';
+  font-weight: 300;
+  font-size: 4vw;
+  margin-left: 20vw;
+  position: absolute;
+  background-color: #141C33;
+  margin-top: -7vw;
+  padding: 0 1vw;
 }
 .input-container form{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 20vw;
 }
 .text-form-landing{
   font-weight: 300;
+  font-size: 2vw;
+  width: 60vw;
+  text-align: center;
+  color: #eb5a5c
 }
 .input-box{
-  width: 50vw;
+  width: 72vw;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
 }
 .input-container input, button{
   border-radius: 50px;
-  /*border: 2px solid rgba(86, 214, 126, 1);*/
-  height: 50px;
-  /*background-color: rgba(86, 214, 126, 0.45);
-  color: rgba(86, 214, 126, 1);*/
-  font-size: 20px;
+  height: 4vw;
+  font-size: 2vw;
   font-weight: 300;
-  padding: 0 10px 0 10px;
   font-family: "QuickSand", sans-serif;
   text-align: center;
   outline: none;
   transition: background-color 0.5s;
 }
 .email-input{
-  background-color: rgba(235, 90, 92, 0.60);
+  background-color: rgba(235, 90, 92, 0.30);
   border: 2px solid rgba(235, 90, 92, 1);
   color: rgba(235, 90, 92, 1);
 }
 .email-input:focus{
-background-color: rgba(235, 90, 92, 0.30);
+background-color: rgba(235, 90, 92, 0.60);
 }
 .email-input::placeholder{
   color: rgba(235, 90, 92, 1);
 }
 .name-input{
-  background-color: rgba(235, 90, 92, 0.60);
+  background-color: rgba(235, 90, 92, 0.30);
   border: 2px solid rgba(235, 90, 92, 1);
   color: rgba(235, 90, 92, 1);
 }
@@ -63,29 +177,28 @@ background-color: rgba(235, 90, 92, 0.30);
   color: rgba(235, 90, 92, 1);
 }
 .name-input:focus{
-  background-color: rgba(235, 90, 92, 0.30);
+  background-color: rgba(235, 90, 92, 0.60);
 }
 .button-submit-landing{
-  background-color: rgba(235, 90, 92, 0.60);
+  background-color: rgba(235, 90, 92, 0.30);
   border: 2px solid rgba(235, 90, 92, 1);
   color: rgba(235, 90, 92, 1);
 }
 .button-submit-landing:active{
-  background-color: rgba(235, 90, 92, 0.30);
+  background-color: rgba(235, 90, 92, 0.60);
 }
 .input-container input{
-  width: 100px;
+  width: 15vw;
   transition: width 0.5s ease, background-color 0.5s ease;
 }
-
 .input-container input:focus{
-  width: 300px;
+  width: 30vw;
 }
 .input-container input::placeholder{
   text-align: center;
 }
 .input-container button{
-  width: 100px;
+  width: 15vw;
   text-align: center;
 }
 .input-container button:active{
