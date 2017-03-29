@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './landingPage.css';
-import logoJsx from './logo.jsx'
+import './logo.css';
 
 
 class LandingPage extends Component {
@@ -8,7 +8,17 @@ class LandingPage extends Component {
     return (
       <div className="container-fullpage">
         <div className="logo-landing-box">
-          <logoJsx/>
+          <svg x="0px" y="0px" cx="500" width="500" height="200" cy="200">
+          <g id="Calque_1_-_copie">
+          	<path className="st2 anim-carre" d="M159.6,157.8H74.3c-9.8,0-17.7-7.9-17.7-17.7V54.8c0-9.8,7.9-17.7,17.7-17.7h85.3c9.8,0,17.7,7.9,17.7,17.7 v85.3C177.3,149.9,169.4,157.8,159.6,157.8z"/>
+          	<path className="st3 anim-carre" d="M155,52.4h-76c-1.1,0-2.1-0.9-2.1-2.1v0c0-1.1,0.9-2.1,2.1-2.1h76c1.1,0,2.1,0.9,2.1,2.1v0 C157,51.5,156.1,52.4,155,52.4z"/>
+          	<text x="-150" y="-57" className="st3 st4 st5 st6 k-svg anim-carre">k</text>
+          	<text x="183.6156" y="139.1542" className="st3 st4 st5 st6 anim-l">l</text>
+          	<text x="210" y="139.1542" className="st3 st4 st5 st6 anim-a1">a</text>
+          	<text x="280.6156" y="139.1542" className="st3 st4 st5 st6 anim-a2">a</text>
+          	<text x="350.6156" y="139.1542" className="st3 st4 st5 st6 anim-p">p</text>
+          </g>
+          </svg>
         </div>
         <div className="content-box">
           <h1 className="text-description commencement green">

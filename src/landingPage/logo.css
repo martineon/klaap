@@ -5,3 +5,21 @@
 .st4{font-family:'Quicksand-Regular';}
 .st5{font-size:119.0267px;}
 .st6{letter-spacing:6;}
+.k-svg{
+  transform: scale(-1);
+}
+.anim-carre{
+  display: relative;
+  margin-left: 0;
+  animation-name: logoCarreAnim;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+
+@keyframes logoCarreAnim {
+  0%{
+    left: -20vw
+  }100%{
+    left: 0
+  }
+}
